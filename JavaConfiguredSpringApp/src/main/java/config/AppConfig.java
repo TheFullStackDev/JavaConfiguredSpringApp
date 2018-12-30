@@ -31,4 +31,15 @@ public class AppConfig {
 		return myCar;
 	}
 	
+	@Bean(name="familyCarConst")
+	public FamilyCar getFamilyCarConst() {
+		
+		//Create instance
+		FamilyCar myCar = new FamilyCar(getSixCyl());
+		
+		return myCar;
+	}
+	
+	
+	
 }
