@@ -1,6 +1,7 @@
 package config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import com.dibas.car.FamilyCar;
@@ -8,6 +9,7 @@ import com.dibas.car.FourCylinderEngine;
 import com.dibas.car.SixCylinderEngine;
 
 @Configuration
+@ComponentScan("com.dibas.car")
 public class AppConfig {
 
 	@Bean(name = "fourCyl")
