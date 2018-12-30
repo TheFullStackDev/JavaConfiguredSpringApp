@@ -2,9 +2,7 @@ package com.dibas.car;
 
 import javax.inject.Named;
 
-import org.springframework.stereotype.Component;
-
-@Named("FourCylinderEngine")
+@Named
 public class FourCylinderEngine implements Engine {
 
 	public int getNumberOfCylinder() {
