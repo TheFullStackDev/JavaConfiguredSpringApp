@@ -25,7 +25,6 @@ public class FamilyCar {
 		this.myEngine = myEngine;
 	}
 
-	@SuppressWarnings("unused")
 	public String getCarDescription() {
 
 		String result = "";
@@ -33,9 +32,7 @@ public class FamilyCar {
 		if (myEngine != null) {
 			result += "Engine Size : " + myEngine.getNumberOfCylinder();
 		}
-		 if(result == null) {
-			 result = "Nothing is set for this car";
-		 }
+		 if(result == "") result = "Nothing is set for this car";
 
 		return result;
 	}

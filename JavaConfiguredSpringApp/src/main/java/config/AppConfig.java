@@ -35,7 +35,7 @@ public class AppConfig {
 	public FamilyCar getFamilyCarConst() {
 		
 		//Create instance
-		FamilyCar myCar = new FamilyCar(getSixCyl());
+		FamilyCar myCar = new FamilyCar();
 		
 		return myCar;
 	}
