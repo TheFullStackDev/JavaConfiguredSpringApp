@@ -9,19 +9,20 @@ import com.dibas.car.FourCylinderEngine;
 import com.dibas.car.SixCylinderEngine;
 
 @Configuration
-@ComponentScan("com.dibas.car")
+@ComponentScan({"com.dibas.car"})
 public class AppConfig {
 
 	@Bean(name = "fourCyl")
 	public FourCylinderEngine getFourCyl() {
 		return new FourCylinderEngine();
 	}
+	
 	@Bean(name = "sixCyl")
 	public SixCylinderEngine getSixCyl() {
 		return new SixCylinderEngine();
 	}
 	
-	@Bean(name="familyCar")
+	/*@Bean(name="familyCar")
 	public FamilyCar getFamilyCar() {
 		
 		//Create instance
@@ -42,6 +43,6 @@ public class AppConfig {
 		return myCar;
 	}
 	
-	
+	*/
 	
 }

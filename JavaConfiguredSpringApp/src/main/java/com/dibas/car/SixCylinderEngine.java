@@ -1,8 +1,8 @@
 package com.dibas.car;
 
-import javax.inject.Named;
+import org.springframework.stereotype.Component;
 
-@Named
+@Component("sixCyl")
 public class SixCylinderEngine  implements Engine {
 
 	public int getNumberOfCylinder() {

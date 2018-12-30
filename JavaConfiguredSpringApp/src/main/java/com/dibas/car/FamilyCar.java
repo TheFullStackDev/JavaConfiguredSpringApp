@@ -24,8 +24,8 @@ public class FamilyCar {
 		return myEngine;
 	}
 
-	@Autowired
-	@Qualifier("sixCyl")
+	//@Autowired
+	//@Qualifier("sixCyl")
 	public void setMyEngine(Engine myEngine) {
 		System.out.println("Setting Engine injection...");
 		this.myEngine = myEngine;
